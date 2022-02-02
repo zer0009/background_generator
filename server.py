@@ -47,4 +47,4 @@ def submit_form():
 
 @app.route("/name")
 def my_name():
-    return "Name is....."
+    return "Name is ahmed"
