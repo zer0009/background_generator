@@ -43,3 +43,8 @@ def submit_form():
             return "Something error"
     else:
         return 'wrong'
+
+
+@app.route("/name")
+def my_name():
+    return "Name is....."
