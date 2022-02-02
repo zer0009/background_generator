@@ -4,11 +4,6 @@ import csv
 app = Flask(__name__)
 
 
-@app.route("/hello")
-def hello_world():
-    return "Hello, Ahmed Hossam!"
-
-
 @app.route("/")
 def my_home():
     return render_template('index.html')
@@ -25,7 +20,6 @@ def write_to_file(data):
         subject = data['subject']
         message = data['message']
         database.write(f'\n {email},{subject},{message}')
-        print(email)
 
 
 def write_to_csv(data):
